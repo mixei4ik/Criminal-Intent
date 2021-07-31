@@ -29,6 +29,7 @@ class CrimeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_crime, container, false)
+
         titleField = view.findViewById(R.id.crime_title) as EditText
         dateButton = view.findViewById(R.id.crime_date) as Button
         solvedCheckBox = view.findViewById(R.id.crime_solved) as CheckBox
@@ -52,9 +53,7 @@ class CrimeFragment : Fragment() {
                 count: Int,
                 after: Int
             ) {
-
-                //это место оставлено пустым специально
-
+                // This space intentionally left blank
             }
 
             override fun onTextChanged(
@@ -67,7 +66,7 @@ class CrimeFragment : Fragment() {
             }
 
             override fun afterTextChanged(sequence: Editable?) {
-                // И это
+                // This one too
             }
         }
 
